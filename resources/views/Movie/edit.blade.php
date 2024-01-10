@@ -13,7 +13,7 @@
                             <div class="mb-3">
                                 <label  class="form-label">Title</label>
                                 <input type="text" name="title" class="form-control @error('title')
-                                is-invalid @enderror " value="{{ $movie->title}}">
+                                is-invalid @enderror " value="{{old('title'),$movie->title}}">
                                 @error('title')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
@@ -21,7 +21,7 @@
                             <div class="mb-3">
                                 <label  class="form-label">Director</label>
                                 <input type="director" name="director" class="form-control @error('direction')
-                                is-invalid @enderror " value="{{ $movie->director}}">
+                                is-invalid @enderror " value="{{ old('director'),$movie->director}}">
                                 @error('director')
                                 <div class="text-danger">{{ $message }}</div>
                                  @enderror
@@ -29,7 +29,7 @@
                             <div class="mb-3">
                                 <label  class="form-label">Year</label>
                                 <input type="year" name="year" class="form-control @error('year')
-                                is-invalid @enderror " value="{{ $movie->year }}">
+                                is-invalid @enderror " value="{{old('year'),$movie->year }}">
                                 @error('year')
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
@@ -37,7 +37,7 @@
                             <div class="mb-3">
                                 <label  class="form-label">Genre</label>
                                 <input type="genre" name="genre" class="form-control @error('genre')
-                                is-invalid @enderror " value="{{ $movie->genre }}">
+                                is-invalid @enderror " value="{{old('genre'),$movie->genre }}">
                                 @error('genre')
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
@@ -45,7 +45,7 @@
                             <div class="mb-3">
                                 <label  class="form-label">Rating</label>
                                 <input type="rating" name="rating" class="form-control @error('rating')
-                                is-invalid @enderror " value="{{ $movie->rating }}">
+                                is-invalid @enderror " value="{{ old('rating'),$movie->rating }}">
                                 @error('rating')
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
