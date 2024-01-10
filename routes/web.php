@@ -22,4 +22,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::resource('movie',MovieController::class);
+Route::resource('movie',MovieController::class)->middleware('auth');

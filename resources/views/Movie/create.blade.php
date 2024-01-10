@@ -7,7 +7,7 @@
                <div class="card mt-5 shadow">
                 <div class="card-body m-3">
                     <div class="">
-                      <h1 class="text-center">Movie Data</h1>
+                      <h1 class="text-center">Movie Store</h1>
                         <form method="POST" action="{{ route('movie.store') }}">
                             @csrf
                             <div class="mb-3 mt-3">
