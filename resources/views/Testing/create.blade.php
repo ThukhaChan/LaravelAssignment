@@ -17,11 +17,11 @@
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 mt-3">
                                 <label  class="form-label">Age<small class="text-danger">*</small></label>
-                                <input type="age" name="age" class="form-control @error('age')is-invalid @enderror" value="{{old('age')}}">
+                                <input type="text" name="age" class="form-control @error('age')is-invalid @enderror" value="{{old('age')}}">
                                 @error('age')
-                                    <div class="text-danger">{{ $message }}></div>
+                                <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="mb-4 ">

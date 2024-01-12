@@ -6,6 +6,11 @@
         <div class="col-md-8">
             <div class="card-body-shadow">
                 <div class="card-body">
+                    <div class="mb-3">
+                        <a href="{{ route('testing.create') }}" class="btn btn-outline-success">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
                     <table class="table table-striped" style="color: rgb(9, 255, 0); --bs-table-striped-color: rgb(9, 255, 0)">
                         <thead>
                           <tr>

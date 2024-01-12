@@ -37,7 +37,7 @@ class TestingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(storeTestingRequest $request)
     {
         $testing=new testing();
         $testing->name=$request->name;
@@ -75,9 +75,13 @@ class TestingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateTestingRequest $request, $id)
     {
-        //
+        $test->name=$request->name;
+        $testing->age=$request->age;
+        $testing->save();
+        return redirect()->route('testing.index');
+        
     }
 
     /**
